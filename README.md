@@ -1,3 +1,10 @@
+## This is personal fork that I only run internally
+
+Some UI elements have changed and tiny bit of functionality was added.
+
+--------
+
+
 # jq kung fu
 
 A [jq](https://github.com/stedolan/jq/) playground, powered by WebAssembly.
