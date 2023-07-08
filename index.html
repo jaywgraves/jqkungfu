@@ -193,6 +193,18 @@
 			}
 		}
 
+		// Launch jq to prettify pasted input
+		function pretty()
+		{
+			var elError = document.getElementById("error");
+
+			// Call jq
+			var out = jq(editorInput.getValue(), '.', []);
+
+			if(out.stdout != "")
+				editorInput.setValue(out.stdout, 1);
+		}
+
 		// Launch jq on current field values
 		function launch()
 		{
